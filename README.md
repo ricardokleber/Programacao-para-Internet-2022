@@ -11,4 +11,4 @@ pip install django
 
 python manage.py runserver
 
-(Acesse via Navegador: http://127.0.0.1/8000)
+(Acesse via Navegador: http://127.0.0.1:8000)
