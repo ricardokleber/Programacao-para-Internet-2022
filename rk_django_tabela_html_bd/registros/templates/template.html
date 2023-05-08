@@ -1,0 +1,16 @@
+<h1>RK - Tabela HTML com BD Sqlite3</h1>
+
+<table border='1'>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Telefone</th>
+    </tr>
+    {% for x in listagem %}
+      <tr>
+        <td>{{ x.id }}</td>
+          <td>{{ x.nome }}</td>
+        <td>{{ x.telefone }}</td>
+      </tr>
+    {% endfor %}
+  </table>
