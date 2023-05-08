@@ -1,2 +1,2 @@
 # Programacao-para-Internet
-Arquivos utilizados na disciplina (2022.2)
+Arquivos utilizados nas turmas 2022
