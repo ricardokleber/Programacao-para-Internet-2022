@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <center><h2>RK - Agenda - CRUD (FBV)</h2>
+            <h3>Cadastro de Novos Amigos</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{form_amigo.as_p}}
+            <button type="submit">Salvar</button>
+            
+            {% if amigo %}
+                <a href = {%url 'deletar_amigo' amigo.id%}>Deletar</a>
+            {% endif %}
+        </form>
+    </center>
+    </body>
+</html>

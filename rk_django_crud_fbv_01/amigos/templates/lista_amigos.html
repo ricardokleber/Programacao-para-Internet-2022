@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <center><h2>RK - Agenda - CRUD (FBV)</h2>
+        <h3>Lista de Amigos Cadastrados</h3>
+        </center>
+        <table border = 2 align=center>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+        {% for amigo in amigo %}
+            <tr>
+                <th>&nbsp&nbsp<a href = "{%url 'atualizar_amigo' amigo.id %}">{{amigo.nome}}</a>&nbsp&nbsp</th>
+                <th>&nbsp&nbsp{{amigo.email}}&nbsp&nbsp</th>
+                <th>&nbsp&nbsp{{amigo.telefone}}&nbsp&nbsp</th>
+                <br/>
+            </tr>
+        {% endfor %}
+        </table>
+    <br/><br/><center><a href ="{%url 'criar_amigo' %}">Registrar novo amigo</a></center>
+    </body>
+</html>
